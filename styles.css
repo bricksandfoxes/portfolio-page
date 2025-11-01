@@ -196,13 +196,13 @@ header {
 h1 {
     color: var(--text-color-dark);
     font-family: var(--font-family);
-    font-size: 64px;
+    font-size: 92px;
 }
 
 h2 {
     color: var(--text-color-dark);
     font-family: var(--font-family);
-    font-size: 32px;
+    font-size: 36px;
 }
 
 /* Working Status - be sure to make it responsive later and actively updates depending on the current project */
@@ -251,11 +251,11 @@ h2 {
     }
     
     h1 {
-        font-size: 60px;
+        font-size: 72px;
     }
 
     h2 {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     .heading-content {
@@ -265,6 +265,10 @@ h2 {
         align-items: center;
         padding: 0;
     }
+
+    .working-status {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -273,11 +277,11 @@ h2 {
     }
     
     h1 {
-        font-size: 52px;
+        font-size: 72px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .heading-content {
@@ -290,15 +294,15 @@ h2 {
 
     .working-status {
         flex-direction: row;
-        padding: 5px 10px;
-        gap: 5px;
+        padding: 7px 20px;
+        gap: 10px;
     }
     .working-status p {
-        font-size: 10px;
+        font-size: 12px;
     }
     .status-indicator {
-        width: 6px;
-        height: 6px;
+        width: 8px;
+        height: 8px;
     }
 }
 
@@ -386,7 +390,7 @@ h5 {
     }
 
     .intro-item-project, .intro-item-project-SGS {
-        width: 100px;
-        height: 150px;
+        width: 175px;
+        height: 200px;
     }
 }
