@@ -18,7 +18,7 @@
 header {
     display: flex;
     justify-content: center;
-    margin: 25px 50px;
+    margin: 25px 50px 10px 50px;
 }
 
 .header-content {
@@ -90,6 +90,59 @@ header {
     background: transparent;
 }
 
+@media (max-width: 840px) {
+    header {
+        margin: 15px 25px 10px 25px;
+    }
+    
+    .header-content {
+        width: 90%;
+        padding: 10px 15px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .logo-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        margin: 10px 15px 10px 15px;
+    }
+    
+    .header-content {
+        width: 100%;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        padding: 5px 10px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .logo-pic {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 /* Light and Dark Mode Toggle */
 
 .light-and-dark {
@@ -129,7 +182,7 @@ header {
 .main-content {
     display: flex;
     flex-direction: column;
-    margin: 25px 50px;
+    margin: 0px 50px;
 }
 
 .heading-content {
@@ -143,40 +196,40 @@ header {
 h1 {
     color: var(--text-color-dark);
     font-family: var(--font-family);
-    font-size: 60px;
+    font-size: 64px;
 }
 
 h2 {
     color: var(--text-color-dark);
     font-family: var(--font-family);
-    font-size: 28px;
+    font-size: 32px;
 }
 
-/* Working Status - be sure to make it responsive later */
+/* Working Status - be sure to make it responsive later and actively updates depending on the current project */
 
 .working-status {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
     border: 2px solid var(--borders-dark);
     background-color: transparent;
     border-radius: 15px;
-    padding: 5px 15px;
+    padding: 5px 10px;
     gap: 10px;
 }
 
 .working-status p {
     color: var(--text-color-dark);
     font-family: var(--font-family);
-    font-size: 15px;
+    font-size: 12px;
     background: transparent;
 }
 
 .status-indicator {
-    width: 10px;
-    height: 10px;
-    background-color: #34D399; /* Green color */
+    width: 8px;
+    height: 8px;
+    background-color: #34D399;
     border-radius: 50%;
 }
 
@@ -192,6 +245,55 @@ h2 {
     text-decoration: underline;
 }
 
+@media (max-width: 840px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .heading-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .heading-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .working-status {
+        flex-direction: row;
+        padding: 5px 10px;
+        gap: 5px;
+    }
+    .working-status p {
+        font-size: 10px;
+    }
+    .status-indicator {
+        width: 6px;
+        height: 6px;
+    }
+}
+
 /* Main Content - Cards Section */
 .intro-work-content {
     display: flex;
@@ -199,7 +301,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 25px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .intro-work-row {
@@ -241,4 +343,42 @@ h5 {
     font-family: var(--font-family);
     font-size: 12px;
     background: transparent;
+}
+
+@media (max-width: 840px) {
+    .intro-work-content {
+        width: 100%;
+    }
+    
+    .intro-work-row {
+        display: grid;
+        width: 75%;
+        justify-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .intro-item-project, .intro-item-project-SGS {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .intro-work-row {
+        display: grid;
+        width: 75%;
+        justify-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .intro-item-project, .intro-item-project-SGS {
+        width: 100px;
+        height: 150px;
+    }
 }
