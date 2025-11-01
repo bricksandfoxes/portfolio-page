@@ -1,9 +1,11 @@
 :root {
-    --site-background-dark: #0a0a0a;
-    --text-color-dark: #f7f7f7;
-    --borders-dark: #555;
-    --hovers-dark: #444;
+    --site-background-dark: #030712;
+    --text-color-dark: #f3f4f6;
+    --borders-dark: #2b2d34;
+    --hovers-dark: #2b2d34;
     --font-family: 'Satoshi', sans-serif;
+    --link-colors: #5995f6;
+    --link-colors-hovers: #3b78d8;
 }
 
 * {
@@ -24,7 +26,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--site-background-dark);
-    border: 2.5px solid var(--borders-dark);
+    border: 2px solid var(--borders-dark);
     border-radius: 15px;
     color: var(--text-color-dark);
     padding: 10px 25px;
@@ -38,7 +40,6 @@ header {
     align-items: center;
     width: 50px;
     height: 50px;
-    margin-left: 15px;
 }
 
 .nav-links {
@@ -57,6 +58,39 @@ header {
     text-decoration: none;
     color: var(--text-color-dark);
 }
+
+.logo-pic {
+    border-radius: 15px;
+}
+
+.contact {
+    border-radius: 15px;
+    border: 2px solid var(--borders-dark);
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+.contact:hover {
+    background-color: var(--hovers-dark);
+}
+
+.contact-button {  
+    border: none;
+    background: transparent;
+    font-size: 20px;
+}
+
+.fa-envelope {
+    background: transparent;
+}
+
+/* Light and Dark Mode Toggle */
 
 .light-and-dark {
     display: flex;
@@ -92,3 +126,119 @@ header {
 }
 
 /* Main content! */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 50px;
+}
+
+.heading-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+h1 {
+    color: var(--text-color-dark);
+    font-family: var(--font-family);
+    font-size: 60px;
+}
+
+h2 {
+    color: var(--text-color-dark);
+    font-family: var(--font-family);
+    font-size: 28px;
+}
+
+/* Working Status - be sure to make it responsive later */
+
+.working-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: 2px solid var(--borders-dark);
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 5px 15px;
+    gap: 10px;
+}
+
+.working-status p {
+    color: var(--text-color-dark);
+    font-family: var(--font-family);
+    font-size: 15px;
+    background: transparent;
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #34D399; /* Green color */
+    border-radius: 50%;
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--link-colors);
+    background: transparent;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--link-colors-hovers);
+    text-decoration: underline;
+}
+
+/* Main Content - Cards Section */
+.intro-work-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.intro-work-row {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.intro-item-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--borders-dark);
+    border-radius: 15px;
+    padding: 15px;
+    width: 150px;
+    height: 200px;
+    background-color: var(--site-background-dark);
+}
+
+.intro-item-project-SGS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--borders-dark);
+    border-radius: 15px;
+    padding: 15px;
+    width: 150px;
+    height: 200px;
+    background-image: url('content/brice.png');
+    background-size: cover;
+    background-position: center;
+}
+
+h5 {
+    color: var(--text-color-dark);
+    font-family: var(--font-family);
+    font-size: 12px;
+    background: transparent;
+}
