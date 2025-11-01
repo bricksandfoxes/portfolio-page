@@ -277,7 +277,7 @@ h2 {
     }
     
     h1 {
-        font-size: 72px;
+        font-size: 68px;
     }
 
     h2 {
@@ -390,7 +390,7 @@ h5 {
     }
 
     .intro-item-project, .intro-item-project-SGS {
-        width: 175px;
+        width: 150px;
         height: 200px;
     }
 }
