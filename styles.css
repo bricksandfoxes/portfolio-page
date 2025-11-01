@@ -277,11 +277,11 @@ h2 {
     }
     
     h1 {
-        font-size: 68px;
+        font-size: 56px;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .heading-content {
@@ -294,11 +294,11 @@ h2 {
 
     .working-status {
         flex-direction: row;
-        padding: 7px 20px;
+        padding: 7px 15px;
         gap: 10px;
     }
     .working-status p {
-        font-size: 12px;
+        font-size: 10px;
     }
     .status-indicator {
         width: 8px;
@@ -390,7 +390,7 @@ h5 {
     }
 
     .intro-item-project, .intro-item-project-SGS {
-        width: 150px;
-        height: 200px;
+        width: 125px;
+        height: 175px;
     }
 }
