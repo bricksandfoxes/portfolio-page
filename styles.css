@@ -246,6 +246,10 @@ h2 {
 }
 
 @media (max-width: 840px) {
+    .main-content {
+        margin: 0px 25px;
+    }
+    
     h1 {
         font-size: 60px;
     }
@@ -264,12 +268,16 @@ h2 {
 }
 
 @media (max-width: 500px) {
+    .main-content {
+        margin: 0px 20px;
+    }
+    
     h1 {
-        font-size: 40px;
+        font-size: 52px;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .heading-content {
