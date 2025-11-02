@@ -206,8 +206,23 @@ h1 {
 h2 {
     color: var(--text-color-dark);
     font-family: var(--font-family);
-    font-size: 36px;
+    font-size: 56px;
 }
+
+h3 {
+    font-family: var(--font-family);
+    font-size: 36px;
+    color: var(--text-color-dark);
+}
+
+h6 {
+    font-family: var(--font-family);
+    color: var(--labels-color-dark);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
 
 /* Working Status - be sure to make it responsive later and actively updates depending on the current project */
 
@@ -341,7 +356,7 @@ h2 {
     background-position: center;
 }
 
-h5 {
+h7 {
     color: var(--text-color-dark);
     font-family: var(--font-family);
     font-size: 13px;
@@ -533,6 +548,7 @@ h5 {
 .intro-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 50px 325px 0px 325px;
     gap: 15px;
 }
@@ -541,26 +557,84 @@ h5 {
     color: var(--text-color-dark);
 }
 
-.intro-header h6 {
-    font-family: var(--font-family);
-    color: var(--labels-color-dark);
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.intro-header h3 {
-    font-family: var(--font-family);
-    font-size: 56px;
+.hero-container {
+    max-width: 1400px;
+    justify-content: center;
+    display: flex;
 }
 
 .hero-image {
-    max-width: 100%;
-    margin: 0;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .hero-pic {
-    width: 1242px;
-    height: 500px;
+    width: 100%;
     border-radius: 15px;
+}
+
+.hero-caption {
+    color: var(--text-color-dark);
+    font-family: var(--font-family);
+    font-size: 18px;
+    background: transparent;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .intro-content {
+        margin: 50px 100px 0px 100px;
+    }
+
+
+    
+    h3 {
+        font-size: 28px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .intro-content {
+        margin: 50px 25px 0px 25px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    .hero-caption {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .intro-content {
+        margin: 25px 15px 0px 15px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    .hero-caption {
+        font-size: 14px;
+    }
 }
