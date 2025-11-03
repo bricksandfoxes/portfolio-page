@@ -147,6 +147,17 @@ header {
     }
 }
 
+/* Footer content! */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-top: 2px solid var(--borders-dark);
+}
+
 /* Light and Dark Mode Toggle */
 
 .light-and-dark {
@@ -220,6 +231,13 @@ h6 {
     color: var(--labels-color-dark);
     font-size: 18px;
     font-weight: 500;
+}
+
+p {
+    font-family: var(--font-family);
+    color: var(--paragraph-color-dark);
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 
@@ -585,12 +603,24 @@ h7 {
     justify-content: center;
 }
 
+.page-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.page-section {
+    display: flex;
+    flex-direction: column;
+}
+
+
 @media (max-width: 1200px) {
     .intro-content {
         margin: 50px 100px 0px 100px;
     }
-
-
     
     h3 {
         font-size: 28px;
