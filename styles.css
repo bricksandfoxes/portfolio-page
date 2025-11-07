@@ -518,7 +518,7 @@ h7 {
 .timeline-label {
     color: var(--text-color-dark);
     font-family: var(--font-family);
-    font-size: 14px;
+    font-size: 1rem;
     margin-top: 10px;
 }
 
@@ -526,7 +526,7 @@ h7 {
 
 @media (max-width: 37.5rem) { /* 600px */
     .timeline-label {
-        font-size: 0.75rem; /* 12px */
+        font-size: 0.85rem; /* 12px */
     }
 
     .timeline-item.superactive .timeline-dot {
@@ -550,7 +550,7 @@ h7 {
 
 @media (max-width: 25rem) { /* 400px */
     .timeline-label {
-        font-size: 0.5rem; /* 8px */
+        font-size: 0.7rem; /* 8px */
     }
     
     .timeline-item.superactive .timeline-dot {
@@ -593,7 +593,7 @@ h7 {
 }
 
 .hero-image {
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 
@@ -627,6 +627,49 @@ h7 {
     flex-direction: column;
 }
 
+.page-section li {
+    color: var(--paragraph-color-dark);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.page-section ol {
+    margin-bottom: 20px;
+}
+
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--link-colors);
+    background: transparent;
+    transition: color 0.3s ease;
+    margin-left: 20px;
+    font-family: var(--font-family);
+}
+
+.link a {
+    text-decoration: none;
+    color: var(--link-colors);
+}
+
+.page-section q {
+    font-style: italic;
+    color: var(--paragraph-color-dark);
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+.page-section q::before {
+    margin: 0;
+}
 
 @media (max-width: 75rem) {
     .intro-content {
