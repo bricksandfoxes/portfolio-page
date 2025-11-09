@@ -62,16 +62,16 @@
         <div class="page-content">
             <div class="page-section">
                 <h3>Overview</h3>
-                <p>The movie ticketing app is a UX portfolio project I embarked on after a project generator suggested making a movie ticketing app, where users can easily search for a movie showing close to them and buy a ticket. Seemed simple at first until I started researching existing apps and user pain points. Many users expressed frustration with clunky interfaces, poor filtering options, and lack of visual confirmations. My goal with this project was to create a seamless and enjoyable ticket purchasing experience that addresses these issues.
+                <p>This project focuses on improving the mobile movie-ticketing experience. I selected this challenge because mobile ticketing surfaces several complex UX issues: location-based discovery, dense visual information, personalization opportunities, transactional clarity, and detailed seat-selection interactions. My goal is to create a smoother, more intuitive ticket-buying experience that reduces friction across these touchpoints.
                 </p>
             </div>
             <div class="page-section">
                 <h3>Conceptualization</h3>
-                <p>I kicked off this project by conducting extensive user research and competitive analysis online. I went to social media sites where moviegoers frequent such as Reddit (and related subreddits), Twitter, Bluesky, and various online forms I came across during my research. I found that users were consistenly frustrated with four distinct things:
+                <p>To understand user needs and frustrations, I conducted online research and a competitive analysis of leading mobile platforms. This included reviewing discussions on Reddit (moviegoing subreddits), Twitter, Bluesky, and broader forums where users shared problems and expectations. While not formal interviews, this approach helped identify consistent patterns in real user behavior and sentiment.
                 </p>
                 <ol>
                     <li>
-                        <strong>Seat mapping:</strong> Moviegoers had a hard time navigating through traditional seat maps, struggling to find the “best” available seats during peak hours or assigning group seats. Sometimes users would even resort to keeping spreadsheets of their favorite seats before booking a ticket.
+                        <strong>Seat mapping:</strong> Users struggle to interpret traditional seat maps, especially during busy showtimes or when booking for groups. Many referenced difficulty identifying “good” seats or avoiding obstructed views; some even maintain personal spreadsheets of preferred seats at their favorite theaters.
                     </li>
                     <div class="quote-box">
                         <q>I can usually tell the general layout just by looking at it but the seat maps can be deceiving sometimes</q> 
@@ -82,25 +82,24 @@
                         </div>
                     </div>
                     <li>
-                        <strong>Search Filtering:</strong> Users had to navigate through movies before seeing what is available near them, when some moviegoers preferred wanting to see what is near them or at certain theaters.
+                        <strong>Search Filtering:</strong> Most platforms require browsing movies before showing nearby availability. Many users prefer a location-first experience that surfaces nearby theaters or showtimes first.
                     </li> 
                     <li>
-                       <strong>Relevant Options</strong> Casual moviegoers were wanting options that allowed them to see movies that are personalized to their interest instead of sorting through latest blockbusters.
-                    </li>
+                       <strong>Personalization</strong> Casual moviegoers want quick access to films aligned with their interests rather than sorting through all blockbusters. There is clear demand for lower cognitive load and contextual recommendations.
                     <li>
-                        <strong>Poor Confirmation</strong> Users were confused on whether or not they had even purchased tickets, with a lack of proper confirmation elements.
+                        <strong>Purchase Confirmation</strong> Users often feel uncertain whether their purchase was successful due to weak confirmation cues. In some cases, tickets don’t activate until shortly before showtime, adding to confusion.
                     </li>
                 </ol>
                 <h3>Wireframing</h3>
-                <p>Though it is embarassing to admit, the bulk of my focus on this project was the seating process. There were a lot more opportunities improving the steat selection process than the other aspects of the app, given users mainly complained about the seating process.</p>
-                <br>
-                <p>I laid out a couple of ideas before landing on this process:</p>
+                <p>I began wireframing the full purchasing flow, with the primary focus on reimagining seat selection. Seat mapping proved to be the most consistently frustrating point in the journey and represented the highest-impact opportunity for improvement.</p>
                 <br>
                 <div class="hero-image">
                     <img src="content/construction.png" alt="Movie Ticketing App Hero" class="hero-pic">
                 </div>
                 <br>
-                <p>Throughout my research, I noticed many users giving recommendations for their favorite seats and auditoriums at their local theaters. This gave me the idea to go the crowdsourcing route and provide recommended seats based on user input.</p>
+                <p>Throughout my research, I saw many users sharing their favorite seats at their local theaters. This suggested a strong community knowledge base, so I explored a crowdsourced model where users can view recommended seats and contribute their own feedback. This allows seat selection to be informed by real user experiences, and not just a static map.</p>
+                <br>
+                <p>These concepts are currently being evaluated for clarity, cognitive load, and ease of navigation before moving into user testing and refinement.</p>
             </div>
         </div>
     </div>
@@ -109,9 +108,9 @@
     <div class="footer-content">
         <p>&copy; 2025 Brice Beaird. All rights reserved.</p>
     </div>
-    <div class="light-and-dark" id="lightDark">
+    <!-- <div class="light-and-dark" id="lightDark">
         <button class="toggle-theme">
             <img src="content/sun.png" class="sun-icon"></img>
         </button>
-    </div>
+    </div> -->
 </footer>
