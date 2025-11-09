@@ -1,0 +1,16 @@
+{
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "redirects": [
+      {
+        "source": "/contact.html",
+        "destination": "/contact",
+        "permanent": true
+      },
+      {
+        "source": "/project-movie-ticket-app.html",
+        "destination": "/project-movie-ticket-app",
+        "permanent": true
+      }
+    ]
+  }

@@ -69,7 +69,6 @@ header {
 .contact {
     border-radius: 15px;
     border: 2px solid var(--borders-dark);
-    background: transparent;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -84,9 +83,13 @@ header {
 }
 
 .contact-button {  
-    border: none;
-    background: transparent;
     font-size: 20px;
+    background: transparent;
+}
+
+.contact-button i {
+    font-size: 1.25rem;
+    color: var(--text-color-dark);
 }
 
 .fa-envelope {
@@ -373,9 +376,12 @@ p {
 .project-pic {
     width: calc(100% + 30px);  
     height: calc(100% + 30px);  
-    object-fit: cover;
-    margin: -15px;  
-    border-radius: 15px;  
+    object-fit: cover;  
+    margin: -15px;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 .intro-item-project::after {
