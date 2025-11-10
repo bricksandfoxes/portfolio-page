@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Brice Beaird</title>
+    <meta name="description" content="Get in touch with Brice Beaird for design projects.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link rel="icon" type="image/png" href="content/brice.png">
+    <script src="scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Avant+Garde+Gothic" rel="stylesheet">
+    <script type="text/javascript" 
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "H66oJnIRFSxvYx-zz",
+            });
+        })();
+    </script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+    </script>
+</head>
+<header>
+    <div class="header-content">
+        <img src="content/brice.png" alt="Brice Beaird" class="logo-pic">
+        <ul class="nav-links">
+            <li><a href="#work">About</a></li>
+            <li><a href="#about">Work</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+        <div class="contact">
+            <a href="/contact.html" class="contact-button">
+                <fa-icon class="fas fa-envelope" style="color:white"></fa-icon>
+            </a>
+        </div>
+    </div>
+</header>
+<body>
+    <form id="contactForm">
+        <div class = "contact-container" id="formContainer">
+            <div class="contact-top-container">
+                <input type="text" placeholder="Enter your name" class="input-small" id="name" required>
+                <input type="email" placeholder="Enter your email" class="input-small" id="email" required>
+            </div>
+            <textarea placeholder="Enter your message" class="input" id="message" required></textarea>
+            <div class="checkbox-containers">
+                <h4>What services are you interested in?</h4>
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="checkbox-input" value="UX Design"> UX Design
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="checkbox-input" value="UI Design"> UI Design
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="checkbox-input" value="Web Development"> Web Development
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="checkbox-input" value="Consultation"> Consultation
+                    </label>
+                </div> 
+            </div>
+            <div class="button-group">
+                <input type="submit" value="Submit" class="form-button" id="submitBtn">
+            </div>
+        </div>
+    </form>
+</body>
+<footer> 
+    <div class="footer-content">
+        <p>&copy; 2025 Brice Beaird. All rights reserved. Built by 
+            <a href="https://bricebeaird.com" class="footer-link">Beaird</a>
+        </p>
+    </div>
+ <!--  <div class="light-and-dark" id="lightDark">
+        <button class="toggle-theme">
+            <img src="content/sun.png" class="sun-icon"></img>
+        </button>
+    </div> ---> 
+</footer>
+</html>
