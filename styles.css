@@ -773,7 +773,7 @@ h7 {
     justify-content: center;
     align-items: center;
     width: min(47rem, 90%);
-    margin: 5rem auto;
+    margin: 0rem auto;
     gap: 15px;
 }
 
@@ -821,7 +821,37 @@ h7 {
     background-color: var(--site-background-dark);
     cursor: pointer;
     transition: background-color 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
 }
+
+.form-button:hover {
+    background-color: var(--text-color-dark);
+}
+
+.form-button:hover span {
+    color: var(--site-background-dark);
+    background: none;
+}
+
+.form-success {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+
+.form-success-show {
+    display: flex;
+}
+
 
 .checkbox-containers {
     display: flex;
@@ -896,6 +926,10 @@ h7 {
         height: 4rem;
         width: 93%;
     }
+
+    placeholder {
+        font-size: 0.875rem;
+    }
 }
 
 @media (max-width: 31.25rem) {
@@ -918,4 +952,5 @@ h7 {
         height: 3.5rem;
         width: 89%;
     }
+
 }

@@ -42,6 +42,9 @@
     </div>
 </header>
 <body>
+<div class="heading-content">
+    <h1>Let's Talk</h1>
+</div>
     <form id="contactForm">
         <div class = "contact-container" id="formContainer">
             <div class="contact-top-container">
@@ -67,10 +70,21 @@
                 </div> 
             </div>
             <div class="button-group">
-                <input type="submit" value="Submit" class="form-button" id="submitBtn">
+                <button type="submit" class="form-button" id="submitBtn">
+                    <span class="button-text">Send Message</span>
+                </button>
             </div>
         </div>
     </form>
+
+    <div class="form-success" id="formSuccess">
+        <h4>Message Sent Successfully!</h4>
+        <div class="success-details">
+            <p>Email: <span id="successEmail"></span></p>
+            <p>Content:</p> <span id="successMessage"></span>
+            <p>Services:</p> <span id="successServices"></span>
+        </div>
+    </div>
 </body>
 <footer> 
     <div class="footer-content">
