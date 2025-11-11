@@ -2,7 +2,7 @@
 
 
 function sendEmail(e) {
-    e.preventDefault(); // Prevent form submission
+    e.preventDefault(); 
     
     const submitBtn = document.getElementById('submitBtn');
     const buttonText = submitBtn.querySelector('.button-text');

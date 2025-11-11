@@ -176,6 +176,13 @@ footer {
     border-top: 2px solid var(--borders-dark);
 }
 
+.footer-link {
+    text-decoration: none;
+    color: var(--link-colors);
+    background: transparent;
+    transition: color 0.3s ease;
+}
+
 /* Light and Dark Mode Toggle */
 
 .light-and-dark {
@@ -665,11 +672,11 @@ h7 {
 }
 
 .hero-caption {
-    color: var(--text-color-dark);
     font-family: var(--font-family);
-    font-size: 18px;
-    background: transparent;
-    margin-top: 10px;
+    color: var(--paragraph-color-dark);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
 }
@@ -697,6 +704,17 @@ h7 {
 
 .page-section ol {
     margin-bottom: 20px;
+}
+
+.software-used {
+    padding: 0;
+    margin: 0;
+}
+
+
+.software-logo {
+    width: 5rem;
+    height: auto;
 }
 
 .quote-box {
@@ -745,7 +763,7 @@ h7 {
     }
 }
 
-@media (max-width: 37.5rem) { /* 600px */
+@media (max-width: 37.5rem) { 
     .intro-content {
         margin: 50px 25px 0px 25px;
     }
@@ -759,11 +777,11 @@ h7 {
     }
 
     .hero-caption {
-        font-size: 16px;
+        font-size: 0.75rem;
     }
 }
 
-@media (max-width: 25rem) { /* 400px */
+@media (max-width: 25rem) { 
     .intro-content {
         margin: 25px 15px 0px 15px;
     }
@@ -867,6 +885,11 @@ h7 {
     display: flex;
 }
 
+.success-details {
+    font-family: var(--font-family);
+    color: var(--text-color-dark);
+    font-size: 1rem;
+}
 
 .checkbox-containers {
     display: flex;
