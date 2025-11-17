@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brice Beaird - Movie Ticketing App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+</head>
+<header>
+    <div class="header-content">
+        <a href="/index.html">
+            <img src="content/brice.png" alt="Brice Beaird" class="logo-pic">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+        <div class="contact">
+            <a href="/contact.html" class="contact-button">
+                <fa-icon class="fas fa-envelope" style="color:white"></fa-icon>
+            </a>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="intro-content">
+        <div class="intro-header">
+            <h6>Summer Project</h6>
+            <h3>Soccer Livestreaming</h3>
+        </div>
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="content/wireframes.png" alt="Movie Ticketing App Hero" class="hero-pic" loading="lazy" onclick="window.open('content/wireframes.png', '_blank')">
+                <p class="hero-caption">Game highlights</p>
+            </div>
+        </div>
+        <div class="software-used">
+            <h3>Software Used</h3>
+        <a href="" target="_blank" class="software-link">
+            <img src="content/htmlmono.png" alt="HTML Logo" class="software-logo" title="HTML"> 
+        </a>
+        <a href="" target="_blank" class="software-link">
+            <img src="content/cssmonochrome.png" alt="CSS Logo" class="software-logo" title="CSS"> 
+        </a>
+        <a href="" target="_blank" class="software-link">
+            <img src="content/jsmonochrome.png" alt="JS Logo" class="software-logo" title="JS"> 
+        </a>
+        <a href="" target="_blank" class="software-link">
+            <img src="content/obsmonochrome.png" alt="OBS Logo" class="software-logo" title="OBS"> 
+        </a>
+        </div>
+        <div class="page-content">
+            <div class="page-section">
+                <h3>Overview</h3>
+                <p>This project focuses on improving the mobile movie-ticketing experience. I selected this challenge because mobile ticketing surfaces several complex UX issues: location-based discovery, dense visual information, personalization opportunities, transactional clarity, and detailed seat-selection interactions. My goal is to create a smoother, more intuitive ticket-buying experience that reduces friction across these touchpoints.
+                </p>
+            </div>
+            <div class="page-section">
+                <h3>Conceptualization</h3>
+                <p>To understand user needs and frustrations, I conducted online research and a competitive analysis of leading mobile platforms. This included reviewing discussions on Reddit (moviegoing subreddits), Twitter, Bluesky, and broader forums where users shared problems and expectations. While not formal interviews, this approach helped identify consistent patterns in real user behavior and sentiment.
+                </p>
+                <ol>
+                    <li>
+                        <strong>Seat mapping:</strong> Users struggle to interpret traditional seat maps, especially during busy showtimes or when booking for groups. Many referenced difficulty identifying “good” seats or avoiding obstructed views; some even maintain personal spreadsheets of preferred seats at their favorite theaters.
+                    </li>
+                    <div class="quote-box">
+                        <q>I can usually tell the general layout just by looking at it but the seat maps can be deceiving sometimes</q> 
+                        <div class="link">
+                            <a href="https://www.reddit.com/r/AMCsAList/comments/1k01kda/comment/mnastj2/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" target="_blank">
+                                - anaccount50, r/AMCsAList <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <li>
+                        <strong>Search Filtering:</strong> Most platforms require browsing movies before showing nearby availability. Many users prefer a location-first experience that surfaces nearby theaters or showtimes first.
+                    </li> 
+                    <li>
+                       <strong>Personalization</strong> Casual moviegoers want quick access to films aligned with their interests rather than sorting through all blockbusters. There is clear demand for lower cognitive load and contextual recommendations.
+                    <li>
+                        <strong>Purchase Confirmation</strong> Users often feel uncertain whether their purchase was successful due to weak confirmation cues. In some cases, tickets don’t activate until shortly before showtime, adding to confusion.
+                    </li>
+                </ol>
+                <h3>Wireframing</h3>
+                <p>I began wireframing the full purchasing flow, with the primary focus on reimagining seat selection. Seat mapping proved to be the most consistently frustrating point in the journey and represented the highest-impact opportunity for improvement.</p>
+                <br>
+                <div class="hero-image">
+                    <img src="content/construction.png" alt="Movie Ticketing App Hero" class="hero-pic">
+                </div>
+                <br>
+                <p>Throughout my research, I saw many users sharing their favorite seats at their local theaters. This suggested a strong community knowledge base, so I explored a crowdsourced model where users can view recommended seats and contribute their own feedback. This allows seat selection to be informed by real user experiences, and not just a static map.</p>
+                <br>
+                <p>These concepts are currently being evaluated for clarity, cognitive load, and ease of navigation before moving into user testing and refinement.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer> 
+        <div class="footer-content">
+            <p>&copy; 2025 Brice Beaird. All rights reserved. Built by 
+                <a href="https://bricebeaird.com" class="footer-link">Beaird</a>
+            </p>
+        </div>
+     <!--  <div class="light-and-dark" id="lightDark">
+            <button class="toggle-theme">
+                <img src="content/sun.png" class="sun-icon"></img>
+            </button>
+        </div> ---> 
+    </footer>
+</body>
