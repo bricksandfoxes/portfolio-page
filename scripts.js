@@ -1,5 +1,5 @@
-
-
+// Initialize slideIndex at the top
+let slideIndex = 1;
 
 function sendEmail(e) {
     e.preventDefault(); 
@@ -51,4 +51,25 @@ function sendEmail(e) {
     return false; 
 }
 
-contactForm.addEventListener('submit', sendEmail);
+// Contact form handling (wrap in condition to avoid undefined error)
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const message = formData.get('message');
+        
+        console.log('Form submitted:', { name, email, message });
+        
+        // Here you would typically send the data to a server
+        // For now, we'll just show a success message
+        alert('Thank you for your message! I\'ll get back to you soon.');
+        
+        // Reset the form
+        this.reset();
+    });
+}
+
