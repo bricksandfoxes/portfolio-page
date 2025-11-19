@@ -183,6 +183,17 @@ footer {
     transition: color 0.3s ease;
 }
 
+@media (max-width: 360px) {
+    footer {
+        padding: 1.5rem 2rem;
+        
+    }
+
+    footer p {
+        font-size: 0.875rem;
+    }
+}
+
 /* Light and Dark Mode Toggle */
 
 .light-and-dark {
@@ -632,6 +643,9 @@ h7 {
     .timeline-line {
         top: 0.313rem; /* 5px */
     }
+
+
+
 }
 
 
