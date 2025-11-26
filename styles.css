@@ -567,7 +567,7 @@ h7 {
 .timeline-item:first-child .timeline-line {
     left: 50%;
     width: 50%;
-    background-color: var(--link-colors);
+    background-color: var(--borders-dark);
 }
 
 .timeline-item.active .timeline-line {
